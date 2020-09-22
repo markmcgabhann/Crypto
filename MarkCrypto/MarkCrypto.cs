@@ -13,7 +13,7 @@ namespace MarkCrypto
         public static string Encrypt(string text, string password)
         {
             int keysize = 256;
-            int derivationIterations = 100;
+            int derivationIterations = 100000;
 
             var salt = new byte[32]; // 256 bits
             var iv = new byte[32]; // 256 bits;
